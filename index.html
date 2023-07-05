@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Gorjetas</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./CSS/styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">   
+   <title>Calculadora de Gorjetas</title>
 </head>
 <body>
+   <div id="container">
     <div>
-       <h1>Calculadora de Gorjetas</h1> 
+       <h1 class="title">Calculadora de Gorjetas</h1> 
     </div>
     <div>
-       <form>
+       <form class="tipsForm">
          <label for="bill">
             <p>Qualto ficou a conta?</p>
          </label>
            <p>
-            R$ <input type="number" placeholder="100" name="bill" id="bill">
+            R$ <input type="number" placeholder="100" name="bill" id="bill" class="formimput">
            </p>
          <label for="serviceQual">
             <p>Como foi seu serviço?</p>
          </label>  
          <p>
-           <select name="serviceQual" id="serviceQual">
+           <select name="serviceQual" id="serviceQual" class="formselect">
             <option disabled selected value="0">-- Escolha uma opção</option>
             <option value="0.3">30% - Incrível</option>
             <option value="0.2">20% - Bom</option>
@@ -34,10 +39,11 @@
            <p>Quantas pessoas vão dividir a conta?</p>
          </label>
          <p>
-            <input type="number" placeholder="1" name="people" id="people">Pessoa(s)
+            <input type="number" placeholder="1" name="people" id="people" class="formimput">Pessoa(s)
          </p>
-         <button type="submit">Calcular</button>
+         <button type="submit" class="formsubmit">Calcular</button>
        </form>
     </div>
+   </div>
 </body>
 </html>
